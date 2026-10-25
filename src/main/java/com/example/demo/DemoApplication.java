@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		Candidate candidate = new Candidate("1", "nghia", "nghiadang@gmail.com", 123456789);
+
+        candidate.sendNotification("hello");
 	}
 
 }
